@@ -5,7 +5,7 @@
 ## 结构
 
 - 每个 skill 一个目录：`skills/<skill-name>/SKILL.md`，frontmatter 的 `name` 与目录名一致。
-- 名字统一用 `tuuject-` 前缀，避免与项目自带或第三方 skill 重名。
+- 名字统一用 `tuu-` 前缀，避免与项目自带或第三方 skill 重名。
 - 只在 `SKILL.md` 里放每次都要的流程；按需读取的长步骤放 `references/`，Codex 的展示信息放 `agents/openai.yaml`。
 
 ## 写法约束

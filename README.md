@@ -6,8 +6,8 @@ tuuject 各项目共用的 Coding Agent Skill。这里放跨项目一致的流�
 
 | Skill | 用途 |
 | --- | --- |
-| [`tuuject-dev-create-feature`](skills/tuuject-dev-create-feature/SKILL.md) | 新 feature 先建 worktree；实现需求后验证、提交、写 devlog、push、开 PR；PR 在 review worktree 审阅、修改与合并 |
-| [`tuuject-dev-review-design-prd`](skills/tuuject-dev-review-design-prd/SKILL.md) | 审阅或新建 `doc/design/` 下的 PRD，意见写进待定区等用户裁决 |
+| [`tuu-create-feature`](skills/tuu-create-feature/SKILL.md) | 新 feature 先建 worktree；实现需求后验证、提交、写 devlog、push、开 PR；PR 在 review worktree 审阅、修改与合并 |
+| [`tuu-review-design-prd`](skills/tuu-review-design-prd/SKILL.md) | 审阅或新建 `doc/design/` 下的 PRD，意见写进待定区等用户裁决 |
 
 ## 安装到项目
 
@@ -18,8 +18,8 @@ tuuject 各项目共用的 Coding Agent Skill。这里放跨项目一致的流�
   "skills": [
     {
       "source": "tuuject/skills",
-      "ref": "v0.1.0",
-      "skills": ["tuuject-dev-create-feature", "tuuject-dev-review-design-prd"]
+      "ref": "v0.2.0",
+      "skills": ["tuu-create-feature", "tuu-review-design-prd"]
     }
   ]
 }
@@ -28,7 +28,7 @@ tuuject 各项目共用的 Coding Agent Skill。这里放跨项目一致的流�
 `ref` 填本仓库的 tag。CLI 用 `git clone --branch` 拉取，只认 tag 或分支名，不认 commit hash；省略时跟随默认分支。一次性安装也可以直接：
 
 ```sh
-npx skills add tuuject/skills --skill tuuject-dev-create-feature --skill tuuject-dev-review-design-prd
+npx skills add tuuject/skills --skill tuu-create-feature --skill tuu-review-design-prd
 ```
 
 ## 项目需要在 AGENTS.md 写清的事

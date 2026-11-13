@@ -1,5 +1,5 @@
 ---
-name: tuuject-dev-review-design-prd
+name: tuu-review-design-prd
 description: 审阅、完善用户自写的 PRD（doc/design/*.md），或按用户模板起一篇新的 PRD。只要用户说「看看这个设计」「审阅一下这篇 PRD」「设计文档还有什么问题」「新建一个 PRD / 设计文档」「把这个想法写成 PRD」，或提到 doc/design/ 里的文件，就用这个 skill。它只做文本层面的审阅与提问：把意见编号后写进「还有什么没想清楚」等用户裁决，绝不替用户拍板、绝不直接改正文。agent-doc/design/ 下的 AI 实施文档不属于本 skill。
 ---
 

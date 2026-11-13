@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tuu: Create Feature & Review PR"
+  short_description: "开工前先 fetch 远端集成分支建 feature worktree；实现需求做完后提交、写 devlog、push 并开 PR；PR 在 review worktree 审阅与合并"
+  default_prompt: "用 $tuu-create-feature 为本次改动建好工作树：先确定集成分支并拉取远端最新代码，在 ../<仓库文件夹名>.worktrees/feature/<feature 分支名> 建 worktree 并切过去，然后在该 worktree 内继续开发；如果是实现需求，做完后按项目 AGENTS.md 验证、git commit、写 devlog、git push，并用 gh 向集成分支开 PR。如果是 review 或合并 PR，按 references/review-pr.md 在 ../<仓库文件夹名>.worktrees/review/pr-<N> 检出审阅。"

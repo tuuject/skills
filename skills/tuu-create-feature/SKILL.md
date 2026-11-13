@@ -1,5 +1,5 @@
 ---
-name: tuuject-dev-create-feature
+name: tuu-create-feature
 description: tuuject 系列项目通用的 git worktree 开发工作流，覆盖三件事：一是开始任何新 feature 开发前的强制前置步骤——先确定集成分支（项目 AGENTS.md 指定的，否则远端有 develop 用 develop，没有就用远端默认分支），从远端拉取最新代码，再在 ../<仓库文件夹名>.worktrees/feature/<feature 分支名> 建好工作树并切过去干活；二是实现需求时做完后的交付——验证、git commit、写 devlog、git push、用 gh 开 PR；三是 review、修改、合并 PR——无论是本仓库分支还是外部贡献者 fork 的 PR，都在 ../<仓库文件夹名>.worktrees/review/pr-<N> 检出审阅，fork PR 先审执行面再装依赖跑测试，合并锁定 review 过的 head。验证命令、提交与 PR 约定以所在项目的 AGENTS.md 为准。用于 push 前的所有代码改动、修 bug、写测试、改文档；只要用户要求「开个 feature」「新开一个改动」「实现 xxx」「先拉最新 develop」「建 worktree」「review / 看看 PR #N」「合并这个 PR」「处理外部贡献」，或要动仓库里任何非只读文件，就先用这个 skill，即使用户没提 worktree 也要用。只读调查、跑测试、纯问答，以及已经位于 feature worktree 内的继续开发不需要。
 ---
 
