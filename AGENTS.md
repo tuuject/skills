@@ -20,3 +20,4 @@
 
 - 新增、删除或改名 skill 时同步 `README.md` 的列表与安装示例。
 - 改名属于破坏性变更：使用方 `package.json` 的 `skills` 字段要同步改，在提交说明里写明。
+- 发布：在 `main` 上打 `vX.Y.Z` tag 并推送，使用方把 `skills` 字段的 `ref` 改成新 tag 后运行 `skills:sync`。已推送的 tag 不改写，使用方的 `skills-lock.json` 靠它校验内容哈希。

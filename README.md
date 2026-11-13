@@ -18,14 +18,14 @@ tuuject 各项目共用的 Coding Agent Skill。这里放跨项目一致的流�
   "skills": [
     {
       "source": "tuuject/skills",
-      "ref": "<tag 或 commit>",
+      "ref": "v0.1.0",
       "skills": ["tuuject-dev-create-feature", "tuuject-dev-review-design-prd"]
     }
   ]
 }
 ```
 
-`ref` 可省略，省略时跟随默认分支。一次性安装也可以直接：
+`ref` 填本仓库的 tag。CLI 用 `git clone --branch` 拉取，只认 tag 或分支名，不认 commit hash；省略时跟随默认分支。一次性安装也可以直接：
 
 ```sh
 npx skills add tuuject/skills --skill tuuject-dev-create-feature --skill tuuject-dev-review-design-prd
